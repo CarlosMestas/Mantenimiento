@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mantenimiento">
         <activity
+            android:name=".SalesEditDelete"
+            android:exported="true" />
+        <activity
+            android:name=".SalesList"
+            android:exported="true" />
+        <activity
+            android:name=".Sales"
+            android:exported="true" />
+        <activity
+            android:name=".ProductsEditDelete"
+            android:exported="true" />
+        <activity
+            android:name=".ProductsList"
+            android:exported="true" />
+        <activity
+            android:name=".Products"
+            android:exported="true" />
+        <activity
+            android:name=".CustomersEditDelete"
+            android:exported="true" />
+        <activity
+            android:name=".CustomersList"
+            android:exported="true" />
+        <activity
+            android:name=".Customers"
+            android:exported="true" />
+        <activity
             android:name=".CategoriasEditDelete"
             android:exported="true" />
         <activity
