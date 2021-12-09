@@ -21,7 +21,7 @@
             android:gravity="center"
             android:paddingTop="25dp"
             android:paddingBottom="25dp"
-            android:text="MANTENIMIENTO"
+            android:text="MAESTRO - CLIENTE"
             android:textSize="35dp"
             android:textStyle="bold" />
 
