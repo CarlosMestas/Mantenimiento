@@ -62,6 +62,8 @@ public class SalesList extends AppCompatActivity {
 
                 titles.add(cursor.getString(id) + "\t" +
                         cursor.getString(customer) + "\t" +
+                        cursor.getString(product) + "\t" +
+                        cursor.getString(quantity) + "\t" +
                         cursor.getString(priceT) + "\t" +
                         cursor.getString(status) + "\t");
             }
@@ -71,26 +73,23 @@ public class SalesList extends AppCompatActivity {
             salesListView.invalidateViews();
         }
 
-        /*
-        productsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+        salesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
                 String pos = titles.get(i).toString();
-                product tmp = products.get(i);
-                Intent intent = new Intent(getApplicationContext(), ProductsEditDelete.class);
+                sale tmp = sales.get(i);
+                Intent intent = new Intent(getApplicationContext(), SalesEditDelete.class);
                 intent.putExtra("id",  tmp.id);
-                intent.putExtra("nam", tmp.name);
-                intent.putExtra("des", tmp.description);
-                intent.putExtra("cat", tmp.category);
+                intent.putExtra("cus", tmp.customer);
+                intent.putExtra("pro", tmp.product);
                 intent.putExtra("qua", tmp.quantity);
-                intent.putExtra("pri", tmp.price);
+                intent.putExtra("priU", tmp.priceU);
+                intent.putExtra("priT", tmp.priceT);
                 intent.putExtra("est", tmp.status);
                 startActivity(intent);
             }
         });
-
-        */
 
     }
 }
